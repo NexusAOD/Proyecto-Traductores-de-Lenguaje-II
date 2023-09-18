@@ -1,7 +1,10 @@
 class NoTerminal:
-    def __init__(self, noterminal):
-        self.noterminal = noterminal
-        
 
-    def __str__(self):
-        return f"{self.noterminal}"
+    def __init__(self):
+        self.NoTerminal = None  # Inicializamos la palabra como None
+
+    def almacenar_NoTerminal(self, NoTerminal):
+        self.NoTerminal = NoTerminal
+
+    def obtener_NoTerminal(self):
+        return self.NoTerminal

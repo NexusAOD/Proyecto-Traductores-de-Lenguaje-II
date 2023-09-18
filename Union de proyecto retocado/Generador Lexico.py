@@ -5,25 +5,36 @@ from Pila import Pila
 
 
 def lexer(input_string):
-    keywords = ['if', 'else', 'while', 'for', 'int', 'float']
-    operators = ['+', '-', '*', '/', '=', '==', '<', '>', '<=', '>=','&&','||','!=']
-    symbols = ['(', ')', '{', '}', ',', ';']
+    tipo = ['int', 'float', 'string']
+    ifKW = ['if']
+    whileKW = ['while']
+    returnKW = ['return']
+    elseKW = ['else']
 
     token_patterns = [
-        (r'\b(' + '|'.join(keywords) + r')\b', 'Palabras reservadas'),
-        (r'\b\d+\b', 'Entero'),
+        (r'\b(' + '|'.join(tipo) + r')\b', 'Tipo'),
+        (r'\b[a-zA-Z_][a-zA-Z0-9_]*\b', 'identificador'),
+        (r'\b\d+\.\d+\b', 'real'),
+        (r'\b\d+\b', 'entero'),
+        (r"'[^']*'", 'cadena'),
         (r'[+\-]', 'opSuma'),
         (r'[*/]', 'opMul'),
-        (r'\b[a-zA-Z_][a-zA-Z0-9_]*\b', 'Identificador'),
-        (r'==', 'opIgualdad'), 
-        (r'!=', 'opIgualdad'), 
-        (r'[()]', 'Parentecis'),
-        (r'[{}]', 'Llave'),
-        (r'[;]', 'Punto y coma'),
+        (r'[=<>]', 'opRelac'),
         (r'[|][|]', 'opOr'),
         (r'[&][&]', 'opAnd'),
         (r'[!]', 'opNot'),
-        (r'[=<>]', 'opRelac'), 
+        (r'==', 'opIgualdad'),
+        (r'[;]', 'Punto y coma'),
+        (r'[,]', 'Coma'), 
+        (r'[(]', 'ParentecisI'),
+        (r'[)]', 'ParentecisD'),
+        (r'[{]', 'LlaveI'),
+        (r'[}]', 'LlaveD'),
+        (r'[=]', 'Igual'),
+        (r'\b(' + '|'.join(ifKW) + r')\b', 'if'),
+        (r'\b(' + '|'.join(whileKW) + r')\b', 'while'),
+        (r'\b(' + '|'.join(returnKW) + r')\b', 'return'),
+        (r'\b(' + '|'.join(elseKW) + r')\b', 'else'), 
         (r'[$]', 'final'), 
         (r'\s+', None)  # Ignorar espacios en blanco
     ]
@@ -52,7 +63,9 @@ def lexer(input_string):
 
 def main():
 # Ejemplo de uso
-    codigo = "a+b$"
+#-------------------------------------------------------------------------------------
+    codigo = " 'hola mundo' "
+#-------------------------------------------------------------------------------------
     tokens = lexer(codigo)
     mi_pila = Pila()
     x = 0
@@ -71,8 +84,29 @@ def main():
     ]
 
     tipoT = [
-        (r'Identificador', 0),  
+        (r'identificador', 0),
+        (r'entero', 1),  
+        (r'real', 2),  
+        (r'cadena', 3),  
+        (r'Tipo', 4),    
         (r'opSuma', 5),
+        (r'opMul', 6),
+        (r'opRelac', 7),
+        (r'opOr', 8),
+        (r'opAnd', 9),
+        (r'opNot', 10),
+        (r'opIgualdad', 11),
+        (r'Punto y coma', 12),
+        (r'Coma', 13),
+        (r'ParentecisI', 14),
+        (r'ParentecisD', 15),
+        (r'LlaveI', 16),
+        (r'LlaveD', 17),
+        (r'Igual', 18),
+        (r'if', 19),
+        (r'while', 20),
+        (r'return', 21),
+        (r'else', 22),
         (r'final', 23), 
     ]
 
@@ -110,9 +144,9 @@ def main():
         
         #print(mi_pila.cima())
         
-        print("x = ", x)
-        print("y = ", y)
-        print("codigo = ", codigo[f])
+        #print("x = ", x)
+        #print("y = ", y)
+        #print("codigo = ", codigo[f])
         #print(vector[y][x])
         #print(mi_pila.cima())
     

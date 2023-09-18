@@ -1,6 +1,10 @@
 class Estado:
-    def __init__(self, estado):
+
+    def __init__(self):
+        self.estado = None  # Inicializamos la palabra como None
+
+    def almacenar_estado(self, estado):
         self.estado = estado
 
-    def __str__(self):
-        return f"{self.estado}"
+    def obtener_estado(self):
+        return self.estado

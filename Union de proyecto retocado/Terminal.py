@@ -1,7 +1,10 @@
 class Terminal:
-    def __init__(self, terminal):
-        self.terminal = terminal
-       
 
-    def __str__(self):
-        return f"{self.terminal}"
+    def __init__(self):
+        self.Terminal = None  # Inicializamos la palabra como None
+
+    def almacenar_Terminal(self, Terminal):
+        self.Terminal = Terminal
+
+    def obtener_Terminal(self):
+        return self.Terminal
