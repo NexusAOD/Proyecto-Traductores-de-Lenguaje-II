@@ -1,7 +1,7 @@
 import re
 
 from Pila import Pila
-
+from Matriz import Matriz
 
 
 def lexer(input_string):
@@ -12,6 +12,10 @@ def lexer(input_string):
     elseKW = ['else']
 
     token_patterns = [
+        (r'\b(' + '|'.join(ifKW) + r')\b', 'if'),
+        (r'\b(' + '|'.join(whileKW) + r')\b', 'while'),
+        (r'\b(' + '|'.join(returnKW) + r')\b', 'return'),
+        (r'\b(' + '|'.join(elseKW) + r')\b', 'else'), 
         (r'\b(' + '|'.join(tipo) + r')\b', 'Tipo'),
         (r'\b[a-zA-Z_][a-zA-Z0-9_]*\b', 'identificador'),
         (r'\b\d+\.\d+\b', 'real'),
@@ -31,10 +35,6 @@ def lexer(input_string):
         (r'[{]', 'LlaveI'),
         (r'[}]', 'LlaveD'),
         (r'[=]', 'Igual'),
-        (r'\b(' + '|'.join(ifKW) + r')\b', 'if'),
-        (r'\b(' + '|'.join(whileKW) + r')\b', 'while'),
-        (r'\b(' + '|'.join(returnKW) + r')\b', 'return'),
-        (r'\b(' + '|'.join(elseKW) + r')\b', 'else'), 
         (r'[$]', 'final'), 
         (r'\s+', None)  # Ignorar espacios en blanco
     ]
@@ -64,10 +64,11 @@ def lexer(input_string):
 def main():
 # Ejemplo de uso
 #-------------------------------------------------------------------------------------
-    codigo = " 'hola mundo' "
+    codigo = "a+b$"
 #-------------------------------------------------------------------------------------
     tokens = lexer(codigo)
-    mi_pila = Pila()
+    mi_pila = Pila()     #Pila
+    mi_matriz = Matriz() #Matriz
     x = 0
     y = 0
     f = 1
@@ -120,7 +121,7 @@ def main():
                 break
 
         #if tipop is not None:
-        print(f"Token: {token}, Tipo token: {tipo_token}, Tipo: {tipop}")
+        #print(f"Token: {token}, Tipo token: {tipo_token}, Tipo: {tipop}")
 
 
         palo = codigo[a] + str(vector[y][x])
@@ -144,15 +145,16 @@ def main():
         
         #print(mi_pila.cima())
         
-        #print("x = ", x)
-        #print("y = ", y)
-        #print("codigo = ", codigo[f])
-        #print(vector[y][x])
-        #print(mi_pila.cima())
+        print("x = ", x)
+        print("y = ", y)
+        print("codigo = ", codigo[f])
+        print(vector[y][x])
+        print(mi_pila.cima())
     
-
-
-
+    xp = 0
+    yp = 5
+    valor = mi_matriz.obtener_valor(yp, xp)
+    print(f"El valor en las coordenadas ({xp}, {yp}) es: {valor}")
 
 """
 #listar tokens
