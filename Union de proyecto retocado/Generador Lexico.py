@@ -151,8 +151,8 @@ def main():
         print(vector[y][x])
         print(mi_pila.cima())
     
-    xp = 0
-    yp = 5
+    xp = 45
+    yp = 71
     valor = mi_matriz.obtener_valor(yp, xp)
     print(f"El valor en las coordenadas ({xp}, {yp}) es: {valor}")
 
