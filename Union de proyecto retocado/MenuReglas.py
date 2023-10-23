@@ -1,33 +1,46 @@
-from R8 import R8
-
-
+from R0 import R0
+from R1 import R1
+from R2 import R2
+from R3 import R3
+from R4 import R4
+from R6 import R6
+from R7 import R7
 
 
 class MenuReglas:
 
-    
-
     def select_option(self, NoPila, mi_pila):
-        
-        r8 = R8()
+        r0 = R0()
+        r1 = R1()
+        r2 = R2()
+        r3 = R3()
+        r4 = R4()
+        r6 = R6()
+        r7 = R7()
         if NoPila == 0:
             return "Has seleccionado la Opción 1."
         elif NoPila == -1:
-            return "Has seleccionado la Opción 2."
+            instancia = r0.manipular_pila(mi_pila)
+            return instancia
         elif NoPila == -2:
-            return "Has seleccionado la Opción 3."
+            instancia = r1.manipular_pila(mi_pila)
+            return instancia
         elif NoPila == -3:
-            return "Has seleccionado la Opción 53."
+            instancia = r2.manipular_pila(mi_pila)
+            return instancia
         elif NoPila == -4:
-            return "Has seleccionado la Opción 53."
+            instancia = r3.manipular_pila(mi_pila)
+            return instancia
         elif NoPila == -5:
-            return "Has seleccionado la Opción 53."
+            instancia = r4.manipular_pila(mi_pila)
+            return instancia
         elif NoPila == -6:
             return "Has seleccionado la Opción 53."
         elif NoPila == -7:
-            return "Has seleccionado la Opción 2."
+            instancia = r6.manipular_pila(mi_pila)
+            return instancia
         elif NoPila == -8:
-            instancia = r8.manipular_pila(mi_pila)
+            instancia = r7.manipular_pila(mi_pila)
             return instancia
         elif NoPila == -9:
             return "Has seleccionado la Opción 53."

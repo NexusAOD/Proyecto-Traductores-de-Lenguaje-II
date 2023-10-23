@@ -78,6 +78,7 @@ def main():
     contador = 0
     ElemenListT = ""
     ElemenListN = 0
+    num = ""
 
     tipoT = [
         (r'identificador', 0),
@@ -131,33 +132,36 @@ def main():
                 NoPila = mi_matriz.obtener_valor(NoPila, ElemenListN)
                 if NoPila == -8:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
-                    NoPila = 9
-                    contador += 1   
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])   
                 elif NoPila > 0:
                     mi_pila.apilar(ElemenListT + str(NoPila))
                     contador += 1
                 elif NoPila < 0:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])                     
                     contador += 1
             
             elif ElemenListN == 1:
                 NoPila = mi_matriz.obtener_valor(NoPila, ElemenListN)
                 if NoPila == -8:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
-                    NoPila = 9
-                    contador += 1   
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])   
                 elif NoPila > 0:
                     mi_pila.apilar(ElemenListT + str(NoPila))
                     contador += 1
                 elif NoPila < 0:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])                     
                     contador += 1
 
             elif ElemenListN == 2:
                 NoPila = mi_matriz.obtener_valor(NoPila, ElemenListN)
                 if NoPila == -8:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
-                    NoPila = 9
                     contador += 1    
                 elif NoPila > 0:
                     mi_pila.apilar(ElemenListT + str(NoPila))
@@ -170,275 +174,317 @@ def main():
                 NoPila = mi_matriz.obtener_valor(NoPila, ElemenListN)
                 if NoPila == -8:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
-                    NoPila = 9
-                    contador += 1   
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])   
                 elif NoPila > 0:
                     mi_pila.apilar(ElemenListT + str(NoPila))
                     contador += 1
                 elif NoPila < 0:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])                     
                     contador += 1
 
             elif ElemenListN == 4:
                 NoPila = mi_matriz.obtener_valor(NoPila, ElemenListN)
                 if NoPila == -8:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
-                    NoPila = 9
-                    contador += 1   
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])   
                 elif NoPila > 0:
                     mi_pila.apilar(ElemenListT + str(NoPila))
                     contador += 1
                 elif NoPila < 0:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])                     
                     contador += 1
 
             elif ElemenListN == 5:
                 NoPila = mi_matriz.obtener_valor(NoPila, ElemenListN)
                 if NoPila == -8:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
-                    NoPila = 9
-                    contador += 1   
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])   
                 elif NoPila > 0:
                     mi_pila.apilar(ElemenListT + str(NoPila))
                     contador += 1
                 elif NoPila < 0:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])                     
                     contador += 1
 
             elif ElemenListN == 6:
                 NoPila = mi_matriz.obtener_valor(NoPila, ElemenListN)
                 if NoPila == -8:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
-                    NoPila = 9
-                    contador += 1   
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])   
                 elif NoPila > 0:
                     mi_pila.apilar(ElemenListT + str(NoPila))
                     contador += 1
                 elif NoPila < 0:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])                     
                     contador += 1
 
             elif ElemenListN == 7:
                 NoPila = mi_matriz.obtener_valor(NoPila, ElemenListN)
                 if NoPila == -8:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
-                    NoPila = 9
-                    contador += 1   
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])   
                 elif NoPila > 0:
                     mi_pila.apilar(ElemenListT + str(NoPila))
                     contador += 1
                 elif NoPila < 0:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])                     
                     contador += 1
 
             elif ElemenListN == 8:
                 NoPila = mi_matriz.obtener_valor(NoPila, ElemenListN)
                 if NoPila == -8:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
-                    NoPila = 9
-                    contador += 1   
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])   
                 elif NoPila > 0:
                     mi_pila.apilar(ElemenListT + str(NoPila))
                     contador += 1
                 elif NoPila < 0:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])                     
                     contador += 1
 
             elif ElemenListN == 9:
                 NoPila = mi_matriz.obtener_valor(NoPila, ElemenListN)
                 if NoPila == -8:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
-                    NoPila = 9
-                    contador += 1   
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])   
                 elif NoPila > 0:
                     mi_pila.apilar(ElemenListT + str(NoPila))
                     contador += 1
                 elif NoPila < 0:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])                     
                     contador += 1
 
             elif ElemenListN == 10:
                 NoPila = mi_matriz.obtener_valor(NoPila, ElemenListN)
                 if NoPila == -8:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
-                    NoPila = 9
-                    contador += 1   
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])   
                 elif NoPila > 0:
                     mi_pila.apilar(ElemenListT + str(NoPila))
                     contador += 1
                 elif NoPila < 0:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])                     
                     contador += 1
                                 
             elif ElemenListN == 11:
                 NoPila = mi_matriz.obtener_valor(NoPila, ElemenListN)
                 if NoPila == -8:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
-                    NoPila = 9
-                    contador += 1   
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])   
                 elif NoPila > 0:
                     mi_pila.apilar(ElemenListT + str(NoPila))
                     contador += 1
                 elif NoPila < 0:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])                     
                     contador += 1
                                 
             elif ElemenListN == 12:
                 NoPila = mi_matriz.obtener_valor(NoPila, ElemenListN)
                 if NoPila == -8:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
-                    NoPila = 9   
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])   
                 elif NoPila > 0:
                     mi_pila.apilar(ElemenListT + str(NoPila))
                     contador += 1
                 elif NoPila < 0:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])                     
                     contador += 1
 
             elif ElemenListN == 13:
                 NoPila = mi_matriz.obtener_valor(NoPila, ElemenListN)
                 if NoPila == -8:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
-                    NoPila = 9
-                    contador += 1   
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])   
                 elif NoPila > 0:
                     mi_pila.apilar(ElemenListT + str(NoPila))
                     contador += 1
                 elif NoPila < 0:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])                     
                     contador += 1
 
             elif ElemenListN == 14:
                 NoPila = mi_matriz.obtener_valor(NoPila, ElemenListN)
                 if NoPila == -8:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
-                    NoPila = 9
-                    contador += 1   
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])   
                 elif NoPila > 0:
                     mi_pila.apilar(ElemenListT + str(NoPila))
                     contador += 1
                 elif NoPila < 0:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])                     
                     contador += 1
 
             elif ElemenListN == 15:
                 NoPila = mi_matriz.obtener_valor(NoPila, ElemenListN)
                 if NoPila == -8:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
-                    NoPila = 9
-                    contador += 1   
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])   
                 elif NoPila > 0:
                     mi_pila.apilar(ElemenListT + str(NoPila))
                     contador += 1
                 elif NoPila < 0:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])                     
                     contador += 1
                                 
             elif ElemenListN == 16:
                 NoPila = mi_matriz.obtener_valor(NoPila, ElemenListN)
                 if NoPila == -8:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
-                    NoPila = 9
-                    contador += 1   
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])   
                 elif NoPila > 0:
                     mi_pila.apilar(ElemenListT + str(NoPila))
                     contador += 1
                 elif NoPila < 0:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])                     
                     contador += 1
 
             elif ElemenListN == 17:
                 NoPila = mi_matriz.obtener_valor(NoPila, ElemenListN)
                 if NoPila == -8:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
-                    NoPila = 9
-                    contador += 1   
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])   
                 elif NoPila > 0:
                     mi_pila.apilar(ElemenListT + str(NoPila))
                     contador += 1
                 elif NoPila < 0:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])                     
                     contador += 1
 
             elif ElemenListN == 18:
                 NoPila = mi_matriz.obtener_valor(NoPila, ElemenListN)
                 if NoPila == -8:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
-                    NoPila = 9
-                    contador += 1   
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])   
                 elif NoPila > 0:
                     mi_pila.apilar(ElemenListT + str(NoPila))
                     contador += 1
                 elif NoPila < 0:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])                     
                     contador += 1
 
             elif ElemenListN == 19:
                 NoPila = mi_matriz.obtener_valor(NoPila, ElemenListN)
                 if NoPila == -8:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
-                    NoPila = 9
-                    contador += 1   
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])   
                 elif NoPila > 0:
                     mi_pila.apilar(ElemenListT + str(NoPila))
                     contador += 1
                 elif NoPila < 0:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])                     
                     contador += 1
 
             elif ElemenListN == 20:
                 NoPila = mi_matriz.obtener_valor(NoPila, ElemenListN)
                 if NoPila == -8:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
-                    NoPila = 9
-                    contador += 1   
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])   
                 elif NoPila > 0:
                     mi_pila.apilar(ElemenListT + str(NoPila))
                     contador += 1
                 elif NoPila < 0:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])                     
                     contador += 1
 
             elif ElemenListN == 21:
                 NoPila = mi_matriz.obtener_valor(NoPila, ElemenListN)
                 if NoPila == -8:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
-                    NoPila = 9
-                    contador += 1   
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])   
                 elif NoPila > 0:
                     mi_pila.apilar(ElemenListT + str(NoPila))
                     contador += 1
                 elif NoPila < 0:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])                     
                     contador += 1
 
             elif ElemenListN == 22:
                 NoPila = mi_matriz.obtener_valor(NoPila, ElemenListN)
                 if NoPila == -8:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
-                    NoPila = 9
-                    contador += 1   
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])   
                 elif NoPila > 0:
                     mi_pila.apilar(ElemenListT + str(NoPila))
                     contador += 1
                 elif NoPila < 0:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])                     
                     contador += 1
             elif ElemenListN == 23:
                 NoPila = mi_matriz.obtener_valor(NoPila, ElemenListN)
-                if NoPila == -8:
-                    mi_pila = mis_reglas.select_option(NoPila, mi_pila)
-                    NoPila = 9
-                    pass  
+                if NoPila == -1:
+                    print("Finalizado....")
+                    contador += 1 
                 elif NoPila > 0:
                     mi_pila.apilar(ElemenListT + str(NoPila))
                     pass
                 elif NoPila < 0:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
-                    pass
+                    num = mi_pila.cima()
+                    NoPila = int(num[-1])    
+                    pass            
             else:
                 print("Error.....")
-            print("Cima pila: ", mi_pila.cima(), "ElementT: ", ElemenListT, "Numero de matriz: ", NoPila, "Tipo: ", ElemenListN)
+            print("Cima pila: ", mi_pila.cima(), "ElementT: ", ElemenListT, "Numero de matriz: ", NoPila, "Tipo: ", ElemenListN, )
 
 
 """  
