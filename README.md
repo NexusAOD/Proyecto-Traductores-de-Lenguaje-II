@@ -19,3 +19,6 @@ Y aqui vemos como funciona parte por parte:
 
 Aqui se puede mostrar como en nuestro algoritmo se guarda en la pila parte por parte lo que hay escrito en el apartado de codigo, de ahi se usa el analizador lexico para ver que tipo y numero es para de esta manera poder usar nuesta matriz para regresar los numeros dependiendo el tipo de dato que sea, al final pdoemos ver como el numero de matriz es -1 ya que ese seria R0 para finalizar nuestro codigo.
 
+El proyecto completo y funcional se puede encontrar en el siguiente link:
+
+- [Proyecto completo](https://github.com/NexusAOD/Proyecto-Traductores-de-Lenguaje-II/tree/main/Union%20de%20proyecto%20retocado)
