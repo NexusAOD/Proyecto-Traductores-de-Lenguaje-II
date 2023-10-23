@@ -7,3 +7,14 @@ Estaremos creando desde 0 en python un compilador guiandonos por medio de la teo
 - [Matriz completa y retoque a los tipos en analizador lexico](https://github.com/NexusAOD/Proyecto-Traductores-de-Lenguaje-II/tree/main/4.-%20Matriz%20con%20todas%20las%20reglas%20y%20tipos%20actualizados%20de%20analizador%20lexico)
 
 En cada link se encuentra paso por paso de nuestro proyecto de Semunario de Traductores de lenguaje II con sus respectivas imagenes del funcionamiento del codigo y una breve descripcion, se trabajara este proyecto por carpetas y se subiran al github actualizandolos manualmente.
+
+Aqui esta un ejemplo de como funciona el analizador sintactico junto con el analizador lexico para poder identificar y procesar este ejemplo que nos proporsiono el profesor para probar nuestro codigo.
+![Tabla con ejemplo:](https://github.com/NexusAOD/Proyecto-Traductores-de-Lenguaje-II/blob/main/Union%20de%20proyecto%20retocado/foto3.png)
+
+Aqui podemos ver de donde se inicializa o se pone nuestro codigo.
+![Iniciar el codigo:](https://github.com/NexusAOD/Proyecto-Traductores-de-Lenguaje-II/blob/main/Union%20de%20proyecto%20retocado/foto2.png)
+
+Y aqui vemos como funciona parte por parte:
+![Prueba del codigo:](https://github.com/NexusAOD/Proyecto-Traductores-de-Lenguaje-II/blob/main/Union%20de%20proyecto%20retocado/foto1.png)
+
+
