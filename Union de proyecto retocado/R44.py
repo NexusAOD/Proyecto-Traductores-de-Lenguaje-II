@@ -1,19 +1,18 @@
 from Matriz import Matriz
 
-class R8: 
-    #        R8 <ListaVar> ::= , identificador <ListaVar> 
+class R44: 
+    #        R44 <Expresion> ::= opSuma <Expresion> 
     def manipular_pila(self, mi_pila ):
         mi_matriz = Matriz()
         num = ""
         NodNum = 0
-        defvar = 28
-        mi_pila.desapilar()
+        defvar = 45
         mi_pila.desapilar()
         mi_pila.desapilar()
         num = mi_pila.cima()
         NodNum = int(num)
         numMat = mi_matriz.obtener_valor(NodNum, defvar) 
-        parametro = "ListaVar" + str(numMat)
+        parametro = "Expresion" + str(numMat)
         mi_pila.apilar(parametro)
 
         return mi_pila

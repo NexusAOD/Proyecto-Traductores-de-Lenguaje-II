@@ -12,7 +12,7 @@ class R6:
         mi_pila.desapilar()
         mi_pila.desapilar()
         num = mi_pila.cima()
-        NodNum = int(num)
+        NodNum = int(num[-2:])
         numMat = mi_matriz.obtener_valor(NodNum, defvar) 
         parametro = "DefVar" + str(numMat)
         mi_pila.apilar(parametro)

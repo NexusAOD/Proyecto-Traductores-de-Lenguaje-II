@@ -1,19 +1,17 @@
 from Matriz import Matriz
 
-class R8: 
-    #        R8 <ListaVar> ::= , identificador <ListaVar> 
+class R17: 
+    #        R17 <DefLocal> ::= <DefVar> 
     def manipular_pila(self, mi_pila ):
         mi_matriz = Matriz()
         num = ""
         NodNum = 0
-        defvar = 28
-        mi_pila.desapilar()
-        mi_pila.desapilar()
+        defvar = 34
         mi_pila.desapilar()
         num = mi_pila.cima()
         NodNum = int(num)
         numMat = mi_matriz.obtener_valor(NodNum, defvar) 
-        parametro = "ListaVar" + str(numMat)
+        parametro = "DefLocal" + str(numMat)
         mi_pila.apilar(parametro)
 
         return mi_pila
