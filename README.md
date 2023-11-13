@@ -26,4 +26,3 @@ Aqui se puede mostrar como en nuestro algoritmo se guarda en la pila parte por p
 El proyecto completo y funcional se puede encontrar en el siguiente link:
 
 - [Proyecto completo](https://github.com/NexusAOD/Proyecto-Traductores-de-Lenguaje-II/tree/main/Union%20de%20proyecto%20retocado)
-https://github.com/NexusAOD/Proyecto-Traductores-de-Lenguaje-II/blob/main/Union%20de%20proyecto%20retocado/Arbol.png
