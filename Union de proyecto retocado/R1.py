@@ -12,7 +12,7 @@ class R1:
         #mi_pila.desapilar()
         #mi_pila.desapilar()
         num = mi_pila.cima()
-        NodNum = int(num)
+        NodNum = int(num[-1])
         numMat = mi_matriz.obtener_valor(NodNum, programa) 
         parametro = "programa" + str(numMat)
         mi_pila.apilar(parametro)

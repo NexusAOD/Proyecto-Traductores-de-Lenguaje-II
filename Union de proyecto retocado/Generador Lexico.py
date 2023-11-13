@@ -64,7 +64,7 @@ def lexer(input_string):
 def main():
 # Ejemplo de uso
 #-------------------------------------------------------------------------------------
-    codigo = "int hola;$"
+    codigo = "int main() {string hola;}$"
 #-------------------------------------------------------------------------------------
     tokens = lexer(codigo)
     mi_pila = Pila()     #Pila
@@ -119,7 +119,7 @@ def main():
                 listaN.append(tipop)
                 break
         #if tipop is not None:
-        #print(f"Token: {token}, Tipo token: {tipo_token}, Tipo: {tipop}")
+        print(f"Token: {token}, Tipo token: {tipo_token}, Tipo: {tipop}")
 
 #-------------------------------------------------------------------------------------------------------------------------------------
 
@@ -356,7 +356,7 @@ def main():
                 if NoPila == -3 or NoPila == -8 or NoPila == -11 or NoPila == -13 or NoPila == -16 or NoPila == -20 or NoPila == -27 or NoPila == -30 or NoPila == -32 or NoPila == -34:
                     mi_pila = mis_reglas.select_option(NoPila, mi_pila)
                     num = mi_pila.cima()
-                    NoPila = int(num[-1])    
+                    NoPila = int(num[-2:])    
                 elif NoPila > 0:
                     mi_pila.apilar(ElemenListT + str(NoPila))
                     contador += 1
